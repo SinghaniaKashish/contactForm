@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href = "output.css"></link>
+</head>
+<body class="mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-10">
+    <div class="w-full md:w-1/2 pl-4 mt-4">
+        <h1 class="font-bold text-2xl my-2">Contact Us</h1> 
+        <p class="text-xs">Let us know your queries, feedbacks and enquiries. We are here to support you 24/7.</p>
+        <hr class="my-3">
+
+        <div class="flex flex-row gap-10 items-center">
+            <img src="..\resources\call.webp" class="h-8">
+            <div>
+                <p class="text-gray-500">Give us a call</p>
+                <p class="font-medium">+91 9736097320</p>
+            </div>
+        </div>
+
+        <hr class="my-3">
+
+        <div class="flex flex-row gap-7 items-center">
+            <img src="..\resources\mail.webp" class="h-6">
+            <div>
+                <p class="text-gray-500">Write to us</p>
+                <p class="font-medium">cs@guvi.in</p>
+            </div>
+        </div>
+
+        <hr class="my-3">
+
+        <div class="flex flex-row gap-11 items-center">
+            <img src="..\resources\location.webp" class="h-8">
+            <div>
+                <p class="text-gray-500 text-sm">Visit us in Chennai @</p>
+                <p class="font-medium">IITM Research park - phase 2, module #9, 3rd floor, D block, Kanagam Rd, Tharamani, Chennai, Tamil Nadu 600113</p>
+                
+                <p class="text-gray-500 text-sm mt-4">Visit us in Noida @</p>
+                <p class="font-medium">A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida, Uttar Pradesh 201307</p>
+            </div>
+        </div>
+        
+        <hr class="my-3">
+
+
+    </div>
+    
+
+    <div class=" w-11/12 md:w-1/2 border rounded-md shadow-lg shadow-black flex flex-col px-3 gap-2 mt-4">
+        <h2 class = "font-bold text-2xl mt-4">Say <spna class="text-green-600">Hello !</spna></h2>
+        <p class="">Feel free to stop by and say hi !</p>
+        <form id="contactForm" class="flex flex-col gap-2">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class=" border border-gray-400 rounded-sm w-4/5" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class=" border border-gray-400 rounded-sm w-4/5" required>
+            
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber"class=" border border-gray-400 rounded-sm w-4/5" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" class=" border border-gray-400 rounded-sm w-4/5" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" class=" border border-gray-400 rounded-sm w-4/5" required></textarea>
+            
+            <button type="submit" class="bg-green-500 p-1 rounded-sm text-white font-medium">Send</button>
+        </form>
+        
+        <p id="statusMessage" class="mb-10"></p>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
